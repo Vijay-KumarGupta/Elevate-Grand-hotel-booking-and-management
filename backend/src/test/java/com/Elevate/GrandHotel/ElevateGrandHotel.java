@@ -1,10 +1,10 @@
-package com.phegondev.PhegonHotel;
+package com.Elevate.GrandHotel;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class PhegonHotelApplicationTests {
+class ElevateGrandHotel {
 
 	@Test
 	void contextLoads() {
