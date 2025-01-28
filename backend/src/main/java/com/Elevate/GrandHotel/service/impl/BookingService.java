@@ -14,7 +14,6 @@ import com.Elevate.GrandHotel.repo.BookingRepository;
 import com.Elevate.GrandHotel.repo.RoomRepository;
 import com.Elevate.GrandHotel.repo.UserRepository;
 import com.Elevate.GrandHotel.service.interfac.IBookingService;
-import com.Elevate.GrandHotel.service.interfac.IRoomService;
 import com.Elevate.GrandHotel.utils.Utils;
 
 import java.util.List;
@@ -24,8 +23,7 @@ public class BookingService implements IBookingService {
 
     @Autowired
     private BookingRepository bookingRepository;
-    @Autowired
-    private IRoomService roomService;
+
     @Autowired
     private RoomRepository roomRepository;
     @Autowired

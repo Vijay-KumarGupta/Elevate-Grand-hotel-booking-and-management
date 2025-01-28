@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
 import com.Elevate.GrandHotel.dto.Response;
-import com.Elevate.GrandHotel.service.interfac.IBookingService;
 import com.Elevate.GrandHotel.service.interfac.IRoomService;
 
 import java.math.BigDecimal;
@@ -21,8 +20,6 @@ public class RoomController {
 
     @Autowired
     private IRoomService roomService;
-    @Autowired
-    private IBookingService iBookingService;
 
     @PostMapping("/add")
     @PreAuthorize("hasAuthority('ADMIN')")

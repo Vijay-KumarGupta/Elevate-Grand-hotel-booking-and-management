@@ -19,7 +19,7 @@ import java.io.InputStream;
 public class AwsS3Service {
 
     // private final String bucketName = "phegon-hotel-images";
-    private final String bucketName = "phegon-hotel-mongo";
+    private final String bucketName = "phegon-hotel-img";
 
     @Value("${aws.s3.access.key}")
     private String awsS3AccessKey;
@@ -28,7 +28,6 @@ public class AwsS3Service {
     private String awsS3SecretKey;
 
     public String saveImageToS3(MultipartFile photo) {
-        String s3LocationImage = null;
 
         try {
 
